@@ -71,8 +71,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/logout" element={<Logout />} />
-            <Route path="*" element={<DemoModal />} />
-            {/* <Route path="*" element={<ERROR />} /> */}
+            {/* <Route path="*" element={<DemoModal />} /> */}
+            <Route path="*" element={<ERROR />} />
           </Routes>
         </UserContext.Provider>
       </BrowserRouter>
