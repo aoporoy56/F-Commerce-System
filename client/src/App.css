@@ -1,0 +1,175 @@
+:root{
+  --primary-color: #0D90E7;
+  --secondary-color: #086CD9;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.modal-backdrop {
+  display: none !important;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .modal-body,
+  .modal-body * {
+    visibility: visible;
+  }
+}
+
+/* my code stat from here */
+a{
+  text-decoration: none !important;
+}
+Form{
+  text-align: left;
+}
+Form > div{
+  margin-bottom: 20px;
+}
+.header{
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 30px 0;
+  margin-bottom: 60px;
+
+}
+.card-wrapper{
+  max-width: 1200px !important;
+}
+.my-card{
+  margin-top: 20px;
+  background-color: var(--primary-color) !important;
+  border-radius: 30px !important;
+  box-shadow: 0px 5px 0px 5px var(--secondary-color) !important;
+  color: white !important;
+  transition: 0.3s;
+}
+.my-card:hover{
+  scale: 1.05;
+}
+.my-card .circle-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -62px;
+}
+.my-card .circle-wrapper .circle-outer{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-card .circle-wrapper .circle-outer .circle{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--secondary-color);
+}
+.my-card .card-title{
+  margin-top: 16px;
+  font-weight: 600;
+}
+.my-card .cicle-outer{
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.my-card .circle i{
+  font-size: 26px;
+  color: #000000;
+}
+.my-card .button{
+  margin-top: 32px;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+}
+.login-btn{
+  background-color: var(--primary-color) !important;
+  color: var(--light-color) !important;
+  border-radius: 10px;
+  padding: 11px 22px !important;
+}
+
+.overview-row .card{
+  padding: 20px 0px;
+}
+.overview-row .card .card-title{
+  margin-top: 15px;
+}
+.overview-row .card .card-text{
+  font-size: 32px;
+  font-weight: 700;
+}
+.overview-row .card svg{
+  height: 40px;
+  width: 40px;
+  color: var(--primary-color);
+}
+h2{
+  margin-bottom: 30px !important;
+  
+}
