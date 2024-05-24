@@ -18,7 +18,7 @@ import AddProduct from "./Pages/AddProduct";
 import UserList from "./Pages/UserList";
 import ProductList from "./Pages/ProductList";
 import Logout from "./Pages/Logout";
-import DemoModal from "./Pages/DemoModal";
+// import DemoModal from "./Pages/DemoModal";
 import Overview from "./Pages/Overview";
 
 function App() {
@@ -26,7 +26,6 @@ function App() {
   useEffect(() => {
     const myUser = localStorage.getItem("user");
     setUser(JSON.parse(myUser));
-    console.log("User", user);
   },[])
   return (
     <div className="App mb-5">
