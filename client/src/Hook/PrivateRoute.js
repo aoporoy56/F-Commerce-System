@@ -1,8 +1,6 @@
 // PrivateRoute.js
 import React, { useEffect } from "react";
-import { Route, Navigate, Outlet } from "react-router-dom";
-import { useUserContext } from "./UseUserContenxt";
-import Login from "../Pages/Login";
+import { Navigate, Outlet } from "react-router-dom";
 
 const PrivateRoute = ({role}) => {
   
